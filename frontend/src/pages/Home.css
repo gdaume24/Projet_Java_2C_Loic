@@ -1,0 +1,16 @@
+.home-page {
+  display: flex;
+  height: 100vh;
+}
+
+.left-form,
+.right-form {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  max-width: 300px;
+}
