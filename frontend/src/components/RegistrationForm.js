@@ -11,11 +11,14 @@ const RegistrationForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/api/signup", {
-        email,
-        password,
-        sharedSecret,
-      });
+      const response = await axios.post(
+        "http://localhost:8080/api/registration",
+        {
+          email,
+          password,
+          sharedSecret,
+        }
+      );
 
       if (response.data.success) {
         alert("Compte créé avec succès");
